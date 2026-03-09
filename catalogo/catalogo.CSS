@@ -1,0 +1,307 @@
+/* 1. ESTILOS BASE Y HEADER */
+body {
+    margin: 0;
+    background-color: #fbfbf7;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4a372d;
+    text-align: center;
+}
+
+header {
+    background-color: #d8c7a2;
+    padding: 20px;  
+    text-align: center;
+}
+
+/* 2. LAYOUT PRINCIPAL (ESCRITORIO)*/
+.contenedor-producto {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* --- Galería (Miniaturas a la izquierda) --- */
+.producto-galeria {
+    display: flex;
+    flex-direction: row; /* Para que las miniaturas queden al lado de la foto grande */
+    gap: 20px;
+}
+
+.vistaprevia {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumb {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+.thumb:hover {
+    border: 1px solid #7d5d4d;
+}
+
+.imagen-principal {
+    flex-grow: 1;
+}
+
+.imagen-principal img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.seccion-personalizacion h3{
+      font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+/*  3. DETALLES DEL PRODUCTO */
+.detalles-producto {
+    text-align: left;
+}
+
+.titulo-joya {
+    font-size: 30px;
+    text-transform:initial;
+    letter-spacing: 1px;
+}
+
+.precio {
+    font-size: 22px;
+    font-weight: bold;
+    color: #7d5d4d;
+    margin: 20px 0;
+}
+
+/* 4. SELECTOR DE PIEDRAS (Solución aquí)*/
+/* La caja que contiene todas las piedras */
+.opciones-piedra {
+    display: flex;
+    flex-wrap: wrap; /* Si no caben en una línea, bajan a la siguiente */
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Estilo general para TODOS los botones dentro de .opciones-piedra */
+.opciones-piedra button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* Los hace círculos perfectos */
+    border: 2px solid #e0e0e0;
+    cursor: pointer;
+    background-size: cover;      /* Adapta la imagen al círculo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;   /* Hace que la animación sea suave */
+}
+
+/* El efecto al pasar el mouse por cada botón */
+.opciones-piedra button:hover {
+    transform: scale(1.15); /* Crece un poquito */
+    border-color: #7d5d4d;  /* Borde café */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Clase para cuando selecciones una piedra con JS */
+.opciones-piedra button.activa {
+    border: 3px solid #7d5d4d;
+    transform: scale(1.1);
+}
+
+/* --- ASIGNACIÓN DE LAS 9 IMÁGENES --- */
+/* Nota: Asegúrate de que las rutas (nombres de archivo) estén perfectos */
+.piedra-color-ref-A { background-image: url('piedras/A-Cristal.jpg'); }
+.piedra-color-ref-B { background-image: url('piedras/B-Azul\ Hielo.jpg'); }
+.piedra-color-ref-C { background-image: url('piedras/C-Verde.png'); }
+.piedra-color-ref-D { background-image: url('piedras/D-Verde\ Oscuro.jpg'); } 
+.piedra-color-ref-E { background-image: url('piedras/E-\ Verde\ Oliva.jpg'); }
+.piedra-color-ref-F { background-image: url('piedras/F-RosaClaro.jpg'); }
+.piedra-color-ref-G { background-image: url('piedras/G-Rosado.webp'); }
+.piedra-color-ref-H { background-image: url('piedras/H-Fucsia.jpg'); }
+.piedra-color-ref-I { background-image: url('piedras/I-Naranja.png'); }
+
+/* 5. BOTONES DE ACCIÓN (Carrito y Cantidad)*/
+.selector-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.selector-cantidad button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.añadir-al-carrito {
+    background-color: #7d5d4d;
+    color: white;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.añadir-al-carrito:hover { /* El espacio antes de :hover estaba rompiendo esto */
+    background-color: #5a4237;
+}
+
+/* 6. NUEVOS ELEMENTOS: METAL, TALLA Y ENTREGA*/
+.seccion-metal h3, .seccion-talla h3 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.metal-seleccionado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.circulo-oro-amarillo {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e6c27a, #d4af37, #b5952f); /* Efecto dorado */
+    border: 1px solid #ccc;
+}
+
+.talla-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.guia-tallas {
+    font-size: 13px;
+    color: #7d5d4d;
+    text-decoration: underline;
+}
+
+.selector-talla {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/*  7. ACCIONES (FAVORITOS Y CARRITO) */
+.acciones-compra {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn-favorito {
+    background: none;
+    border: 1px solid #ddd;
+    font-size: 24px;
+    color: #7d5d4d;
+    cursor: pointer;
+    width: 60px;
+    transition: all 0.3s ease;
+}
+
+.btn-favorito:hover {
+    border-color: #7d5d4d;
+    color: rgba(241, 204, 134, 0.877); /* Se pone rojo al pasar el mouse */
+}
+
+/*  8. INFORMACIÓN DE ENTREGA*/
+.info-entrega {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #d8c7a2;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.info-entrega p {
+    margin: 5px 0;
+}
+
+/* 9. SECCIÓN SCROLL: EXPLORA MÁS (CATÁLOGO)*/
+.seccion-mas-anillos {
+    background-color: #fff;
+    padding: 60px 20px;
+    border-top: 1px solid #eee;
+}
+
+.contenedor-mas-anillos {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor-mas-anillos h2 {
+    text-align: left;
+    font-size: 22px;
+    color: #4a372d;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.grid-catalogo {
+    display: grid;
+    /* Esto hace la magia responsive: caben las que puedan de 250px mínimo */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px;
+}
+
+.tarjeta-producto {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px); /* Se eleva un poquito al pasar el mouse */
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: #fbfbf7;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 15px;
+}
+
+.tarjeta-producto h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.desc-metal {
+    font-size: 12px;
+    color: #888;
+    margin: 0 0 10px 0;
+}
+
+.precio-catalogo {
+    font-weight: bold;
+    color: #7d5d4d;
+    margin: 0;
+}

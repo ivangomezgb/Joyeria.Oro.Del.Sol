@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Favoritos</title>
+    <link rel="stylesheet" href="favoritos.css">
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <div class="top-bar">🚚 Envío gratis en compras mayores a $50.000</div>
+
+    <!-- Encabezado -->
+    <header>
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+            <div class="dropdown">
+                <button class="dropbtn">☰ Categorías</button>
+                <div class="dropdown-content">
+                    <a href="#">Café</a>
+                    <a href="#">Té</a>
+                    <a href="#">Accesorios</a>
+                    <a href="#">Ofertas</a>
+                </div>
+            </div>
+
+            <h1 class="titulo">☕ La Tienda del Café</h1>
+
+            <div style="display:flex; align-items:center; gap:8px;">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar...">
+                    <button>🔍</button>
+                </div>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" class="iconc" alt="carrito"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" class="iconc" alt="usuario"></a>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#" class="active">Favoritos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección favoritos -->
+    <section class="favoritos-section">
+        <div class="favoritos-header">
+            <h2>❤️ Mis Favoritos</h2>
+            <p class="favoritos-subtitle">Productos que has guardado para más tarde</p>
+        </div>
+
+        <!-- Sin favoritos (oculto por JS si hay productos) -->
+        <div class="empty-state" id="emptyState">
+            <div class="empty-icon">🤍</div>
+            <h3>Aún no tienes favoritos</h3>
+            <p>Explora nuestros productos y guarda los que más te gusten.</p>
+            <a href="#" class="btn-explorar">Explorar productos</a>
+        </div>
+
+        <!-- Lista de favoritos -->
+        <div class="product-list" id="favoritosList">
+
+            <div class="card">
+                <button class="btn-quitar" onclick="quitarFavorito(this)" title="Quitar de favoritos">♥</button>
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=300&q=80" alt="Café Americano">
+                <h3>Café Americano Premium</h3>
+                <p class="descripcion">Blend suave con notas de chocolate y caramelo.</p>
+                <p class="precio">$28.000</p>
+                <button class="btn-carrito">Agregar al carrito</button>
+            </div>
+
+            <div class="card">
+                <button class="btn-quitar" onclick="quitarFavorito(this)" title="Quitar de favoritos">♥</button>
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300&q=80" alt="Espresso">
+                <h3>Espresso Intenso</h3>
+                <p class="descripcion">Tueste oscuro con cuerpo fuerte y acabado largo.</p>
+                <p class="precio">$24.000</p>
+                <button class="btn-carrito">Agregar al carrito</button>
+            </div>
+
+            <div class="card">
+                <button class="btn-quitar" onclick="quitarFavorito(this)" title="Quitar de favoritos">♥</button>
+                <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=300&q=80" alt="Té Verde">
+                <h3>Té Verde Matcha</h3>
+                <p class="descripcion">Matcha ceremonial japonés de primera calidad.</p>
+                <p class="precio">$32.000</p>
+                <button class="btn-carrito">Agregar al carrito</button>
+            </div>
+
+            <div class="card">
+                <button class="btn-quitar" onclick="quitarFavorito(this)" title="Quitar de favoritos">♥</button>
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&q=80" alt="Latte">
+                <h3>Latte Vainilla</h3>
+                <p class="descripcion">Cremoso y dulce con aroma a vainilla natural.</p>
+                <p class="precio">$26.000</p>
+                <button class="btn-carrito">Agregar al carrito</button>
+            </div>
+
+            <div class="card">
+                <button class="btn-quitar" onclick="quitarFavorito(this)" title="Quitar de favoritos">♥</button>
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=300&q=80" alt="Taza">
+                <h3>Taza Artesanal</h3>
+                <p class="descripcion">Cerámica hecha a mano, 300ml, edición limitada.</p>
+                <p class="precio">$45.000</p>
+                <button class="btn-carrito">Agregar al carrito</button>
+            </div>
+
+        </div>
+
+        <!-- Contador -->
+        <div class="favoritos-footer" id="favoritosFooter">
+            <p id="contadorFav">5 productos guardados</p>
+            <button class="btn-limpiar" onclick="limpiarTodo()">Limpiar lista</button>
+        </div>
+
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4>La Tienda del Café</h4>
+                <ul>
+                    <li>Sobre nosotros</li>
+                    <li>Blog</li>
+                    <li>Trabaja con nosotros</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Ayuda</h4>
+                <ul>
+                    <li>Preguntas frecuentes</li>
+                    <li>Envíos y devoluciones</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Síguenos</h4>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>TikTok</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy">© 2025 La Tienda del Café. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function quitarFavorito(btn) {
+            const card = btn.closest('.card');
+            card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.85)';
+            setTimeout(() => {
+                card.remove();
+                actualizarContador();
+            }, 400);
+        }
+
+        function actualizarContador() {
+            const cards = document.querySelectorAll('#favoritosList .card');
+            const contador = document.getElementById('contadorFav');
+            const emptyState = document.getElementById('emptyState');
+            const footer = document.getElementById('favoritosFooter');
+
+            if (cards.length === 0) {
+                emptyState.style.display = 'flex';
+                footer.style.display = 'none';
+            } else {
+                contador.textContent = `${cards.length} producto${cards.length !== 1 ? 's' : ''} guardado${cards.length !== 1 ? 's' : ''}`;
+            }
+        }
+
+        function limpiarTodo() {
+            const cards = document.querySelectorAll('#favoritosList .card');
+            cards.forEach((card, i) => {
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.85)';
+                    setTimeout(() => {
+                        card.remove();
+                        actualizarContador();
+                    }, 300);
+                }, i * 80);
+            });
+        }
+    </script>
+
+</body>
+</html>

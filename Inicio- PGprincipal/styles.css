@@ -231,3 +231,7 @@ footer {
     margin-top: 20px;
     font-size: 14px;
 }
+
+.top-bar {
+    transition: opacity 0.4s ease;
+}

@@ -376,3 +376,7 @@ footer {
     font-size: 14px;
     color: #5a4535;
 }
+
+.top-bar {
+    transition: opacity 0.4s ease;
+}

@@ -1,3 +1,5 @@
+
+
 function quitarFavorito(btn) {
             const card = btn.closest('.card');
             card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
@@ -37,6 +39,7 @@ function quitarFavorito(btn) {
                 }, i * 80);
             });
         }
+    //texto que cambia parte superior favoritos//
     
         const mensajes = [
     "🚚 Envío gratis en compras mayores a $50.000",

@@ -1,4 +1,5 @@
-
+//texto que cambia parte superior PGprincipal//
+    
         const mensajes = [
     "🚚 Envío gratis en compras mayores a $50.000",
     "☕ Nuevos sabores de temporada disponibles",

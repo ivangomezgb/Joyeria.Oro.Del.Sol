@@ -119,17 +119,16 @@ header {
     transform: scale(1.1);
 }
 
-/* --- ASIGNACIÓN DE LAS 9 IMÁGENES --- */
-/* Nota: Asegúrate de que las rutas (nombres de archivo) estén perfectos */
-.piedra-color-ref-A { background-image: url('piedras/A-Cristal.jpg'); }
-.piedra-color-ref-B { background-image: url('piedras/B-Azul\ Hielo.jpg'); }
-.piedra-color-ref-C { background-image: url('piedras/C-Verde.png'); }
-.piedra-color-ref-D { background-image: url('piedras/D-Verde\ Oscuro.jpg'); } 
-.piedra-color-ref-E { background-image: url('piedras/E-\ Verde\ Oliva.jpg'); }
-.piedra-color-ref-F { background-image: url('piedras/F-RosaClaro.jpg'); }
+/* --- ASIGNACIÓN DE LAS 9 IMÁGENES --- */ 
+.piedra-color-ref-A { background-image: url('piedras/A-Cristal.webp'); }
+.piedra-color-ref-B { background-image: url('piedras/B-Azul-Hielo.webp'); }
+.piedra-color-ref-C { background-image: url('piedras/C-Verde.webp'); }
+.piedra-color-ref-D { background-image: url('piedras/D-Verde-Oscuro.webp'); } 
+.piedra-color-ref-E { background-image: url('piedras/E-Verde-Oliva.webp'); }
+.piedra-color-ref-F { background-image: url('piedras/F-RosaClaro.webp'); }
 .piedra-color-ref-G { background-image: url('piedras/G-Rosado.webp'); }
-.piedra-color-ref-H { background-image: url('piedras/H-Fucsia.jpg'); }
-.piedra-color-ref-I { background-image: url('piedras/I-Naranja.png'); }
+.piedra-color-ref-H { background-image: url('piedras/H-Fucsia.webp'); }
+.piedra-color-ref-I { background-image: url('piedras/I-Naranja.webp'); }
 
 /* 5. BOTONES DE ACCIÓN (Carrito y Cantidad)*/
 .selector-cantidad {

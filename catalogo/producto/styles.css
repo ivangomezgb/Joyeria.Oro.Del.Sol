@@ -119,8 +119,12 @@ header {
     transform: scale(1.1);
 }
 
+<<<<<<< HEAD:catalogo/styles.css
 /* --- ASIGNACIÓN DE LAS 9 IMÁGENES --- */
 /* Nota: Asegúrate de que las rutas (nombres de archivo) estén perfectos */
+=======
+/* --- ASIGNACIÓN DE LAS 9 IMÁGENES --- */ 
+>>>>>>> 59fb665c3302ab1acd4245312a84aae436a3c024:catalogo/producto/styles.css
 .piedra-color-ref-A { background-image: url('piedras/A-Cristal.webp'); }
 .piedra-color-ref-B { background-image: url('piedras/B-Azul-Hielo.webp'); }
 .piedra-color-ref-C { background-image: url('piedras/C-Verde.webp'); }

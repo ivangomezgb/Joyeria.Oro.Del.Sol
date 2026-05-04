@@ -823,7 +823,6 @@ button {
   .collections-grid { grid-template-columns: 1fr 1fr; }
   .collections-grid .collection-card:last-child { display: none; }
 }
-
 /* ── Móvil ── */
 @media (max-width: 900px) {
   :root {

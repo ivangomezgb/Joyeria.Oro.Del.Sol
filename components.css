@@ -153,7 +153,6 @@
   font-weight: 600;
 }
 
-
 /* ────────────────────────────────────────────────────────
    COLLECTION CARD
    Uso: sección de colecciones con nombre
@@ -245,7 +244,6 @@
    REVIEW CARD
    (Estilos ya en styles.css — aquí solo variantes)
    ──────────────────────────────────────────────────────── */
-
 /* Variante destacada (por si se necesita) */
 .review-card--featured {
   border-top-color: var(--color-oro);

@@ -107,7 +107,7 @@ function initRevealOnScroll() {
 
 
 /* ════════════════════════════════════════════════════════
-   4. ANNOUNCE BAR
+   4. ANNOUNCE BAR - barra de anuncios
    Rota mensajes automáticamente con fade
    ════════════════════════════════════════════════════════ */
 const ANNOUNCE_MESSAGES = [

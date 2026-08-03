@@ -148,8 +148,8 @@
 
 
 /* ────────────────────────────────────────────────────────
-   BARRA DE CATEGORÍAS
-   Independiente del header — se oculta al hacer scroll
+    BARRA DE CATEGORÍAS
+    Independiente del header — se oculta al hacer scroll
    ──────────────────────────────────────────────────────── */
 .category-bar {
   background: var(--color-marfil);
@@ -407,7 +407,7 @@
 
 
 /* ════════════════════════════════════════════════════════
-   RESPONSIVE DEL HEADER
+    RESPONSIVE DEL HEADER
    ════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
   .header__inner {

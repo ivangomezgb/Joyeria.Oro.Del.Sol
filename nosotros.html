@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre nosotros — Oro del Sol </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Provicional sTYLE /CAMBIAR AL QUE YA SE TIENE HECHO -->
+<style>
+  :root{
+    --ink:#1c1a17;
+    --bg:#faf7f2;
+    --line:#e4dcd0;
+    --muted:#6f685c;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    font-weight:300;
+    line-height:1.7;
+  }
+  h1,h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    margin:0;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
+
+  header{
+    text-align:center;
+    padding:26px 20px;
+    border-bottom:1px solid var(--line);
+    font-family:'Cormorant Garamond', serif;
+    font-size:20px;
+    letter-spacing:.08em;
+  }
+
+  .hero{padding:70px 24px 50px; text-align:center;}
+  .hero h1{
+    font-size:clamp(30px,5vw,46px);
+    line-height:1.2;
+    max-width:16ch;
+    margin:0 auto;
+  }
+
+  section{padding:44px 0;}
+  section.divider{border-top:1px solid var(--line);}
+
+  .kicker{
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--muted);
+    display:block;
+    margin-bottom:12px;
+    text-align:center;
+  }
+  section h2{
+    font-size:clamp(22px,3.2vw,28px);
+    text-align:center;
+    max-width:36ch;
+    margin:0 auto 22px;
+  }
+  section p{
+    font-size:16px;
+    color:#3b362f;
+    margin:0 0 16px;
+    text-align:center;
+    max-width:56ch;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  /* placeholder para fotos, mismo tamaño que usaba la página original */
+  .photo-slot{
+    width:100%;
+    max-width:480px;
+    aspect-ratio:1/1;
+    margin:26px auto 0;
+    border:1px dashed #c9bfae;
+    border-radius:2px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    color:#9a8f7c;
+    background:#f2ece1;
+  }
+  .photo-slot svg{width:30px; height:30px; stroke:#9a8f7c; fill:none; stroke-width:1.3;}
+  .photo-slot span{font-size:12px; letter-spacing:.06em; text-transform:uppercase;}
+
+  /* si quieres poner una foto real, cambia el div.photo-slot por:
+     <img src="tu-foto.jpg" alt="descripción"> */
+
+  .proceso-item{
+    padding:40px 0;
+    border-top:1px solid var(--line);
+    text-align:center;
+  }
+  .proceso-item:last-child{padding-bottom:0;}
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:50px 24px 30px;
+    text-align:center;
+    font-size:13px;
+    color:var(--muted);
+  }
+  footer .links{
+    display:flex; flex-wrap:wrap; justify-content:center; gap:18px;
+    margin-bottom:28px;
+    font-size:13px;
+  }
+  footer .links a{color:var(--ink); text-decoration:none;}
+  footer .links a:hover{text-decoration:underline;}
+  footer .social{display:flex; justify-content:center; gap:16px; margin-bottom:20px;}
+  footer .social a{color:var(--ink); text-decoration:none; font-size:13px;}
+  footer .social a:hover{text-decoration:underline;}
+</style>
+</head>
+
+<!-- contenido importante - sujeto a cambios por historia-->
+<body>
+
+<header>ORO DEL SOL</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>El valor de una joya también está en su historia.</h1>
+  </div>
+</section>
+
+<section class="divider">
+  <div class="wrap">
+    <span class="kicker">Nuestra historia</span>
+    <p>Oro del Sol nace en Sogamoso, Boyacá, una ciudad conocida como la <b>Ciudad del Sol y del Acero. </b> </p>
+    <p>Desde nuestros inicios Luana y Felipe, han trabajado en el diseño, elaboración y comercialización de joyería, buscando combinar la experiencia artesanal con una visión moderna del mercado.</p>
+    <p>Hoy queremos llevar esa esencia a un nuevo espacio: <em>una marca que conserve nuestras raíces y, al mismo tiempo, acerque nuestras joyas a más personas a través del mundo digital</em>.</p>
+  </div>
+</section>
+
+<section class="divider">
+  <div class="wrap">
+    <span class="kicker">Nuestro propósito</span>
+    <h2>Crear joyas que representen lo que eres y lo que quieres conservar.</h2>
+    <p>En Oro del Sol creemos que una joya es mucho más que un objeto. Puede representar un momento, un vínculo, un logro o una parte de nuestra propia historia.</p>
+
+    <p>Por eso, nuestro propósito es crear y ofrecer piezas que combinen <b>calidad, diseño y significado</b>, cuidando cada detalle desde su concepción hasta llegar a las manos de nuestros clientes.</p>
+    <p>Queremos que cada pieza encuentre su lugar en una historia.</p>
+  </div>
+</section>
+
+<section class="divider">
+  <div class="wrap">
+    <span class="kicker">¿A qué se debe el nombre?</span>
+    <!--Puede haber un titulo h2 que llame la atencion sobre la historia y porque se eligio el nombre -->
+    <h2>Una marca que lleva sus raíces en el nombre.</h2>
+    <p>Oro del Sol nace de nuestra tierra.</p>
+    <p>Sogamoso, Boyacá, es conocida como la Ciudad del Sol y del Acero, y esta identidad fue una de las inspiraciones para construir el nombre de nuestra marca.</p>
+    <p>El sol representa nuestro origen, la luz y la energía que identifican a nuestra tierra. El oro representa el material que ha dado vida a nuestro oficio y el valor, la belleza y la permanencia que buscamos transmitir en cada joya.</p>
+    <p>Por eso, <b>Oro del Sol no es solo un nombre: es una forma de llevar nuestras raíces a cada pieza.</b></p>
+  </div>
+</section>
+
+<section class="divider">
+  <div class="wrap">
+    <span class="kicker">Nuestros diseños</span>
+    <h2>Diseños que combinan tradición, elegancia y personalidad.</h2>
+    <p>Cada joya comienza con una idea. Nuestro objetivo es convertirla en una pieza que conserve su esencia y, al mismo tiempo, responda a las necesidades y gustos de quienes la eligen.</p>
+    <p>Trabajamos nuestros diseños buscando un equilibrio entre <b>estética, calidad, detalle y durabilidad.</b></p>
+    <p>Desde piezas clásicas hasta propuestas más contemporáneas, buscamos que cada diseño tenga una identidad propia y pueda convertirse en parte de la historia de quien lo lleva.</p>
+  </div>
+</section>
+
+<section class="hero" style="padding-top:60px;">
+  <div class="wrap">
+    <h1 style="font-size:clamp(26px,4vw,36px);">Diseños elaborados con dedicación</h1>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <div class="proceso-item">
+    <span class="kicker">Nuestro proceso creativo</span>
+    <p>Antes de convertirse en una joya, cada pieza nace de una idea.</p>
+    <p>Analizamos formas, proporciones, materiales y detalles para desarrollar diseños que representen la identidad de Oro del Sol y respondan a las necesidades de nuestros clientes.</p>
+  </div>
+
+  <div class="proceso-item">
+    <span class="kicker">Del concepto al diseño</span>
+    <p>Una vez definida la idea, desarrollamos el diseño de la pieza, determinando sus características, proporciones, acabados y detalles.</p>
+    <p>Cada decisión busca lograr una pieza equilibrada, estética y funcional.</p>
+  </div>
+
+  <div class="proceso-item">
+    <span class="kicker">Diseño digital 3D</span>
+    <p>A partir del diseño inicial, podemos desarrollar una representación tridimensional de la pieza para visualizar sus características y definir con mayor precisión sus medidas y proporciones antes de pasar a la producción.</p>
+    <div class="photo-slot">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 15l5-5 4 4 5-6 4 5"/><circle cx="8" cy="8" r="1.5"/></svg>
+      <span>Pon aquí tu foto</span>
+    </div>
+  </div>
+
+  <div class="proceso-item">
+    <span class="kicker">Realización del molde</span>
+    <p>El diseño se materializa mediante el proceso de elaboración del molde y la preparación de la pieza.</p>
+    <p>Cada detalle debe ser cuidadosamente trabajado para que el resultado conserve las características definidas durante la etapa de diseño.</p>
+    <div class="photo-slot">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 15l5-5 4 4 5-6 4 5"/><circle cx="8" cy="8" r="1.5"/></svg>
+      <span>Pon aquí tu foto</span>
+    </div>
+  </div>
+
+  <div class="proceso-item">
+    <span class="kicker">Producción y acabado</span>
+    <p>La pieza pasa por las diferentes etapas de producción, donde se trabaja su forma, superficie y acabado.</p>
+    <p>Posteriormente se realizan procesos de pulido y abrillantado para conseguir el aspecto final de la joya.</p>
+    <div class="photo-slot">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 15l5-5 4 4 5-6 4 5"/><circle cx="8" cy="8" r="1.5"/></svg>
+      <span>Pon aquí tu foto</span>
+    </div>
+  </div>
+
+  <div class="proceso-item">
+    <span class="kicker">Control de calidad</span>
+    <p>Cada pieza es revisada antes de llegar al cliente.</p>
+    <p>Verificamos aspectos como su acabado, detalles, medidas y presentación para procurar que el producto cumpla con los estándares de calidad establecidos por Oro del Sol.</p>
+
+    <p><b>Porque detrás de cada joya hay un proceso que merece el mismo cuidado que el resultado.</b></p>
+  </div>
+
+</div>
+
+  <div class="proceso-item">
+    <span class="kicker">Nuestra forma de llegar a nuestros clientes</span>
+    <h2>Una marca con raíces tradicionales y una visión hacia el futuro.</h2>
+    <p>Oro del Sol busca conectar la experiencia de la joyería tradicional con las nuevas formas de comprar y relacionarse con las marcas.</p>
+    <p>Por eso desarrollamos un modelo comercial híbrido <b>B2B + B2C.</b></p>
+
+    <h4>Modelo comercial híbrido</h4>
+    <p><b>B2B:</b><br>Trabajamos con joyerías y clientes mayoristas, ofreciendo productos que puedan formar parte de sus catálogos y negocios.
+    <b>B2C:</b><br>A través de nuestro e-commerce, acercamos directamente nuestras joyas al consumidor final, ofreciendo una experiencia de compra sencilla, clara y confiable.<br>
+
+    Así, mantenemos nuestras raíces comerciales mientras abrimos nuevas posibilidades para que Oro del Sol llegue a más personas. </p>
+
+   
+  </div>
+
+<!-- Provicional Footer /CAMBIAR AL QUE YA SE TIENE HECHO -->
+<footer>
+  <div>© 2026 Oro del Sol</div>
+</footer>
+
+</body>
+</html>

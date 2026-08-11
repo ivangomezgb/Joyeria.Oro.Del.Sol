@@ -10,6 +10,7 @@
    ──────────────────────────────────────────────────────── */
 :root {
   /* Paleta de marca */
+  
   --color-oro:          #d9c7a3;   /* Arena dorada — header, acento */
   --color-cacao:        #785041;   /* Marrón profundo — botones, CTA */
   --color-cacao-hover:  #5a3a2f;   /* Hover de botones */
@@ -17,6 +18,13 @@
   --color-marfil-alt:   #ede2c8;   /* Crema más oscura — fondos alternos */
   --color-tierra:       #2c1a10;   /* Oscuro — footer, sidebar, sección B2B */
   --color-oro-borde:    #c4ae88;   /* Bordes y líneas doradas */
+
+  /* Colores de apoyo - Dorados */
+  --gold:       #c9a84c;
+  --gold-light: #e8d5a3;
+  --gold-dark:  #9a7c32;
+  --obsidian:   #0c0b09;
+  --cream:      #faf8f4;
 
   /* Texto */
   --color-text-dark:    #2c1a10;
